@@ -1,0 +1,7 @@
+//https://us-central1-ajlevinesandbox.cloudfunctions.net/helloWorld
+
+exports.helloWorld = function helloWorld(req, res) {
+  if (req.body.message === undefined) {
+    res.status(400).send('Hello DevFest 2017!');
+	}
+};
